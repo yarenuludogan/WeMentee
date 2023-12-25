@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.5s ease-out;
+}
+
+.paragraph {
+  padding: 0 20px;
+}
+.scroll-animate .animate-text {
+  opacity: 1;
+  transform: translateX(0);
+}
+.logo {
+  background-color: transparent;
+}
+.scroll-effect {
+  opacity: 0;
+  transition: opacity 1.4s ease-in;
+}
+
+.scroll-effect.visible {
+  opacity: 1;
+}
+
+.highlight {
+  color: purple; /* Belirli kelimenin rengi */
+}
